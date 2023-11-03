@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _2Y_OOP_2324_ADeckOfCards
+﻿namespace _2Y_OOP_2324_ADeckOfCards
 {
     internal class Card
     {
@@ -15,7 +9,7 @@ namespace _2Y_OOP_2324_ADeckOfCards
         public Card(int v, char s, string f)
         {
             value = v;
-            suit = s; 
+            suit = s;
             faceValue = f;
         }
 
@@ -27,7 +21,7 @@ namespace _2Y_OOP_2324_ADeckOfCards
         public string GetCardSuit()
         {
             string Suit = "";
-            switch(suit)
+            switch (suit)
             {
                 case 'D':
                     Suit = "Diamond";
@@ -49,7 +43,7 @@ namespace _2Y_OOP_2324_ADeckOfCards
         {
             string face = faceValue;
 
-            switch(face)
+            switch (face)
             {
                 case "A":
                     face = "Ace";

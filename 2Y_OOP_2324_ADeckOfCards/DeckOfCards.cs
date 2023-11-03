@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http.Headers;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _2Y_OOP_2324_ADeckOfCards
 {
@@ -11,8 +7,8 @@ namespace _2Y_OOP_2324_ADeckOfCards
     {
         private int suits = 4;
         private int cards = 13;
-        private char[] suitChars = { 'D','H','S','C'};
-        private string[] cardFaces = { "A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
+        private char[] suitChars = { 'D', 'H', 'S', 'C' };
+        private string[] cardFaces = { "A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K" };
 
         private List<Card> deckOfCards = new List<Card>();
 
@@ -25,9 +21,9 @@ namespace _2Y_OOP_2324_ADeckOfCards
 
         private void GenerateDeck()
         {
-            for(int x = 0; x < suits; x++)
+            for (int x = 0; x < suits; x++)
             {
-                for(int y = 0; y < cards; y++)
+                for (int y = 0; y < cards; y++)
                 {
                     int value = y + 1;
                     if (value > 10)
@@ -39,7 +35,7 @@ namespace _2Y_OOP_2324_ADeckOfCards
 
         public void DisplayDeck()
         {
-            foreach(Card c in deckOfCards) 
+            foreach (Card c in deckOfCards)
             {
                 Console.WriteLine($"The Card is the {c.GetCardFace()} of {c.GetCardSuit()} with a value of {c.GetCardValue()}");
             }
@@ -55,7 +51,7 @@ namespace _2Y_OOP_2324_ADeckOfCards
 
             temp1 = new List<Card>(deckOfCards);
 
-            while( shuffleCount > 0 ) 
+            while (shuffleCount > 0)
             {
                 while (temp1.Count > 0)
                 {
@@ -84,7 +80,7 @@ namespace _2Y_OOP_2324_ADeckOfCards
         {
             List<Card> drawnCards = new List<Card>();
 
-            for(int x = 0; x < number; x++)
+            for (int x = 0; x < number; x++)
             {
                 drawnCards.Add(drawACard());
             }
