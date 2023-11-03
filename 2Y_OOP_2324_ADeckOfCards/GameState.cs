@@ -57,7 +57,7 @@ namespace _2Y_OOP_2324_ADeckOfCards
         {
             return PlayerScore() == 21 || ComputerScore() == 21;
         }
-
+        
         /// <summary>
         /// Displays current scores of player and computer
         /// </summary>

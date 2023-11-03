@@ -6,7 +6,6 @@ namespace _2Y_OOP_2324_ADeckOfCards
     {
         private DeckOfCards doc;
         private GameState gs;
-        private int round = 1;
         public BlackJack()
         {
             doc = new DeckOfCards(true);
